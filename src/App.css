@@ -1,0 +1,32 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .app-container {
+    display: flex;
+  }
+  
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #070242;
+    color: #fff;
+  }
+  
+  .sidebar-container {
+    position: fixed;
+    top: 60px; /* Adjust top position based on navbar height */
+    width: 200px;
+    height: calc(100vh - 50px); /* Subtract navbar height from viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    background-color: rgb(101, 101, 101);
+  }
+  
+  .content-container {
+    flex: 1; /* Takes remaining space */
+    margin-left: 200px; /* Adjust for sidebar width */
+    padding: 20px;
+    margin-top: 60px;
+  }
